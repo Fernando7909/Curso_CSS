@@ -1,0 +1,90 @@
+/* SELECTORES */
+
+/* 
+SELECTORES SIMPLES
+    Selectores elementales
+        Selector Universal -> *
+        Selector de tipo o de etiqueta -> Nombre de la etiqueta
+    Selectores de atributo
+        id -> id del elemeto
+        clase -> clase del elemento
+        otros atributos
+            [atributo href]
+            [atributo = valor]
+            [atributo^=valor]
+            [atributo*=valor]
+            [atributo$=valor]
+            [atributo|=valor]
+SELECTORES COMPUESTOS
+    Selectores Agrupados
+    Selectores Combinados
+    Pseudoclases - Pseudoelementos
+ */
+
+ /*Selectores elementales*/
+    /*Selector Universal*/
+    *{
+        background-color: lightcoral;
+    }
+
+    /*Selector de tipo o de etiqueta*/
+    h1{
+        background-color: lightcyan;
+    }
+
+    p{
+        background-color: lightgreen;
+    }
+
+    ul{
+        background-color: red;
+    }
+
+    li{
+        background-color: blue;
+    }
+
+/*Selectores de atributo*/
+    /* id */ 
+    #title{
+        background-color: lightpink;
+    } /*No es recomendable dar estilos con id ya que son identificadores*/
+
+    /* clase */
+    .title{
+        background-color: lightsalmon;
+    }
+
+    .texto{
+        background-color: yellowgreen;
+    }
+
+    /* otros atributos */
+        /* atributo href */
+        [href]{
+            background-color: magenta;
+        }
+
+        [href="https://google.com"]{
+            background-color: aqua;
+        }
+
+        /* atributo circunflejo. Si empieza por esa palabra */
+        [href^="color"]{
+            background-color: peru;
+        }
+
+        /* atributo asterisco. Si contiene esa palabra */
+        [href*="modo"]{
+            background-color: green;
+        }
+
+        /* atributo $. Si termina en esa palabra */
+        [href$="rojo"]{
+            background-color: crimson;
+        }
+
+        /* atributo pipe o barra. Para el idioma */
+        [lang|="en"]{
+            background-color: blue;
+        }
