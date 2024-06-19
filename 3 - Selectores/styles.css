@@ -17,9 +17,13 @@ SELECTORES SIMPLES
             [atributo|=valor]
 SELECTORES COMPUESTOS
     Selectores Agrupados
-    Selectores Combinados
-    Pseudoclases - Pseudoelementos
+    Selectores Combinadores
+        Selector descendiente
+        Selector de hermano siguiente +
+        Selector de hermano siguiente ~
+        Selector de hojo directo > 
  */
+
 
  /*Selectores elementales*/
     /*Selector Universal*/
@@ -46,7 +50,7 @@ SELECTORES COMPUESTOS
 
 /*Selectores de atributo*/
     /* id */ 
-    #title{
+   /* #title{
         background-color: lightpink;
     } /*No es recomendable dar estilos con id ya que son identificadores*/
 
@@ -88,3 +92,30 @@ SELECTORES COMPUESTOS
         [lang|="en"]{
             background-color: blue;
         }
+
+/* Selectores agrupados */
+.texto,
+.texto1 {
+    background-color: goldenrod;
+}
+
+/* Selectores combinadores */
+    /* Selector descendiente. Padre e hijos */
+    div .titulo2 {
+        background-color: teal;
+    } */
+
+    /* Selector de hermano siguiente +. 2 elementos que estan al mismo nivel dentro de otro elemento. Uno justo dspues de otro  */
+    .texto1 + h2 {
+        background-color: red;
+    }
+
+    /* Selector de hermano siguiente ~. Sleccionas todos los hermanos que coincidadan con la seleccion */
+    .texto1 ~ .texto{
+        background-color: beige;
+    }
+
+    /* Selecctor de hijo directo >. Selecciona solo los hojos directos */
+    .container > .texto1{
+        background-color: green;
+    }
