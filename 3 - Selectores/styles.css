@@ -50,7 +50,7 @@ SELECTORES COMPUESTOS
 
 /*Selectores de atributo*/
     /* id */ 
-   /* #title{
+    #title{
         background-color: lightpink;
     } /*No es recomendable dar estilos con id ya que son identificadores*/
 

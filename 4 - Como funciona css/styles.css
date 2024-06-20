@@ -1,0 +1,73 @@
+/* 
+    ¿como funciona css?
+    Especificidad -> Establece como de especifico es un 
+    selector para saber que estilo aplicar.
+    El calculo se realiza con la siguiente formula:
+    
+    Cascada
+    Herencia
+    !important gana a todo pero nunca se usa
+
+    Aunque el ultimo elemento lo pongamos el primero. se seguiria aplicando el color 
+    tomato, ya que contra mas valor tenga de especificidad, este estilo prevalecera
+ */
+
+ /* CASCADA */
+ h1{
+    background-color: red;
+ }
+
+ .title{
+    background-color: blue;
+ }
+
+ #title{    
+    background-color: green;
+ }
+
+ h1.title{
+    background-color: yellow;
+ }
+
+ h1#title{
+    background-color: teal;
+ }
+
+ h1.title#title{
+    background-color: tomato;
+ }
+
+
+ /* HERENCIA */
+ /* Capacidad de algunos elementos de heredar algunas propiedades
+ de sus elementos contenedores, padres, abuelos..*/
+ body{
+   background-color: #333;
+ }
+
+ .title{
+   color: cyan;
+   font-size: 15px;
+ }
+
+ .text{
+   color: rebeccapurple;
+ }
+
+ .link{
+   color: inherit
+ }
+  /* Los enlaces NO heredan, pero con la propiedad "inherit" se fuerza la herencia
+  No solo en los links, sino en cualquier propiedad que por defecto np herede */
+  /* A los enlaces no se le puede aplicar width y heith para cambiar el tamaño
+  de la caja que lo contiene. LA caja es del tamaño del enlace */
+
+.list{
+   color: indianred;
+}
+
+.list-item-extra{
+   color: initial;
+}
+/* la propiedad initial hace que vuelva a su estado inicial.
+ignola la herencia*/
