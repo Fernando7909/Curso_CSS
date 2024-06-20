@@ -31,6 +31,9 @@ SELECTORES COMPUESTOS
         background-color: lightcoral;
     }
 
+    /* En el S. universal NO se recomienda poner
+    margin: o; y padding: o; */
+
     /*Selector de tipo o de etiqueta*/
     h1{
         background-color: lightcyan;

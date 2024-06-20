@@ -1,0 +1,40 @@
+/* 
+PADDING
+    Es la propiedad que nos permite generar espacio interno
+    entre el borde y la caja. 
+    Es un shorthand (propiedad abreviada) que controla los 4
+    lados a los que dar Padding.
+    padding-top: superior
+    padding-right: derecha
+    padding-buttom: inferior
+    padding-left: izqierdo
+    
+    Admite hasta 4 valores que van en orden de las agujas
+    del reloj.
+    4 valores -> padding: top right bottom Left
+    3 valores -> padding: top left/right bottom
+    2 valores -> padding: top/bottom left/right
+    1 valor -> padding: top/right/bottom/left
+
+*/
+body{
+    background-color: #333;
+}
+.block{
+    background-color: purple;
+    width: 200px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 100px;
+    padding-left: 100px;
+}
+.inline{
+    background-color: lightcoral;
+    color: inherit;
+    padding-left: 100px;
+}
+
+/* Cuando utilizamos padding el tamaño entre el borde y el contenido aumenta. 
+Por lo tanto, el tamaño del contenedor aumenta*/
+/* Funciona igual para enlaces */
